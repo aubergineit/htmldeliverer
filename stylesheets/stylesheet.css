@@ -451,11 +451,11 @@ Small Device Styles
   width: 200px;
   display: inline;
 }
-.main_content_wrap h2 {
+#main_content_wrap h2 {
   margin-top: 25px; 
 }
 h1 {
-  line-height: 25px;
+  line-height: 30px;
 }
 h1 span{
   display: block;
