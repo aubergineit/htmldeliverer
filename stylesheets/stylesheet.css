@@ -429,3 +429,14 @@ Small Device Styles
   }
 
 }
+.poweredby {
+  float:right;
+  color: white;
+}
+.button {
+  background: none repeat scroll 0 0 #DDDDDD;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  padding: 10px;
+  margin-right: 10px;
+}
