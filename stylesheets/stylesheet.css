@@ -439,6 +439,11 @@ Small Device Styles
   border-radius: 3px 3px 3px 3px;
   padding: 10px;
   margin-right: 10px;
+  width: 200px;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 20px;
 }
 .social {
   height: 30px;
@@ -460,5 +465,9 @@ h1 {
 h1 span{
   display: block;
   color: #ccc;  
+}
+.buttons {
+  float: left;
+  width: 100%;
 }
 
