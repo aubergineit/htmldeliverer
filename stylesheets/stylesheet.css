@@ -447,3 +447,8 @@ Small Device Styles
 .social iframe {
   float: left;
 }
+.images img{
+  width: 315px;
+  height: 244px;
+  display: inline;
+}
