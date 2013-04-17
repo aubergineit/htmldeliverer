@@ -448,7 +448,6 @@ Small Device Styles
   float: left;
 }
 .images img{
-  width: 315px;
-  height: 244px;
+  width: 200px;
   display: inline;
 }
