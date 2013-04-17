@@ -92,11 +92,11 @@ if(isset($_GET['make']) && $_GET['make'] == 'zip') {
 				<ul>
 					<li><a href="#preview">Preview</a></li>
 					<li><a href="#previewsource">HTML</a></li>
-          <li><a href="#preview" data-value="480">Smartphone</a></li>
-          <li><a href="#preview" data-value="620">Small tablet</a></li>
-          <li><a href="#preview" data-value="788">Tablet portrait</a></li>
-          <li><a href="#preview" data-value="1024">Tablet landscape</a></li>
-          <li><a href="#preview" data-value="1300">Laptop</a></li>
+				        <li><a href="#preview" data-value="480">Smartphone</a></li>
+				        <li><a href="#preview" data-value="620">Small tablet</a></li>
+				        <li><a href="#preview" data-value="788">Tablet portrait</a></li>
+				        <li><a href="#preview" data-value="1024">Tablet landscape</a></li>
+				        <li><a href="#preview" data-value="1300">Laptop</a></li>
 
 				</ul>
 				<div id="preview" class="ui-widget-content">
