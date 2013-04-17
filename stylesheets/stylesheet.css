@@ -452,9 +452,13 @@ Small Device Styles
   display: inline;
 }
 .main_content_wrap h2 {
-  
+  margin-top: 25px; 
+}
+h1 {
+  line-height: 25px;
 }
 h1 span{
   display: block;
   color: #ccc;  
 }
+
