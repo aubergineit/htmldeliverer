@@ -440,3 +440,10 @@ Small Device Styles
   padding: 10px;
   margin-right: 10px;
 }
+.social {
+  height: 30px;
+}
+.social .fb-like,
+.social iframe {
+  float: left;
+}
