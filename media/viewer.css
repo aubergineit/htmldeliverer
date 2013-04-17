@@ -1,0 +1,148 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#preview { 
+	width: 1024px; 
+	height: 768px; 
+	padding: 1em;
+	padding-left: 0;
+}
+#file-list {
+	height: 105px;
+	border-bottom: black 1px solid;
+	background: #555;
+	position: relative;
+}
+#file-list .logo {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#file-list h1.project-title {
+	font: 2.2em Cambria;
+	margin: 0;
+	padding: 8px 0 0 200px;
+	color: #f90;
+	font-style: italic;
+	float: left;
+}
+#file-list .page-txt, #file-list .download-txt, #file-list .external-txt, #file-list .tinyurl-txt, #file-list .refresh-frame {
+	color: #fff;
+	font: 1.2em Cambria, sans-serif;
+	position: absolute;
+}
+#file-list .page-txt {
+	/*left: 200px;
+	top: 19px;*/
+	left: 10px;
+	top: 66px;
+}
+.dropdown {
+	position: absolute;
+	/*left: 275px;
+	top: 14px;*/
+	left: 85px;
+	top: 60px;
+	z-index: 10;
+}
+#file-list .refresh-frame {
+	left: 319px;
+	top: 59px;
+}
+#file-list .external-txt {
+	left: 361px;
+	top: 61px;
+}
+#file-list .download-txt {
+	/*left: 540px;
+	top: 17px;*/
+	left: 566px;
+	top: 61px;
+}
+#file-list .tinyurl-txt {
+	/*left: 540px;
+	top: 17px;*/
+	/*left: 715px;*/
+	left: 570px;
+	top: 59px;
+	padding-left: 35px;
+}
+#file-list .tinyurl-txt input {
+	width: 180px;
+}
+#file-list a.zip, #file-list a.external-link {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	width: 115px;
+	height: 30px;
+	padding-left: 30px;
+	padding-top: 3px;
+}
+#file-list a.external-link {
+	width: 165px;
+}
+#file-list a.zip img, #file-list a.external-link img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+}
+#file-list .tinyurl-txt img {
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+.ui-widget-content {
+	border: none;
+}
+.ui-tabs {
+	padding: 0;
+}
+.ui-tabs-nav {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border: none;
+	border-bottom: 1px solid #aaa;
+}
+/* Capriola, sans-serif */
+.break {
+	height: 0;
+	line-height: 0;
+}
+
+#width-changer .selectboxit-container .selectboxit, #width-changer .selectboxit-container .selectboxit-options {
+	width: 100px;
+	min-width: 100px;
+}
+#maindock {
+	position: relative;
+}
+#width-changer {
+	position: absolute;
+	left: 910px;
+	top: 3px;
+	z-index: 10;
+}
+ .ui-resizable-helper { 
+	border: 2px dotted #f90; 
+}
+
+.validators {
+	position: absolute;
+	left: 740px;
+	top: 46px;
+	width: 200px;
+	text-align: center;
+
+	color: #fff;
+	font: 1.2em Cambria,sans-serif;
+}
+.validators img.html {
+	width: 32px;
+}

@@ -1,0 +1,19 @@
+body {
+	background: #555;
+	color: #fff;
+	font-family: Calibri, Verdana, sans-serif;
+}
+h1, h2 {
+	font-family: Cambria, Georgia, sans-serif;
+}
+h1 {
+	font-style: italic;
+	color: #f90;
+}
+h2 {
+	border-bottom: #fff 1px solid;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}

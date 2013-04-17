@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<showcase project-title="Demo website">
+	<pagegroup title="Index projects">
+		<page src="projects/aubergine-it.nl/AIT CMS 4 _ Homepage.htm" title="Index">
+		</page>
+	</pagegroup>
+
+	<pagegroup title="Detail projects">
+		<page src="projects/aubergine-it.nl/AIT CMS 4 _ Mensen.htm" title="People">
+		</page>
+		<page src="projects/aubergine-it.nl/AIT CMS 4 _ Werk.htm" title="Projects">
+		</page>
+		<page src="projects/aubergine-it.nl/AIT CMS 4 _ Onze kracht.htm" title="Generic page">
+		</page>
+		
+	</pagegroup>
+
+
+</showcase>
