@@ -453,14 +453,14 @@ Small Device Styles
   float: left;
 }
 .images img{
-  width: 200px;
+  width: 180px;
   display: inline;
 }
 #main_content_wrap h2 {
   margin-top: 25px; 
 }
 h1 {
-  line-height: 30px;
+  line-height: 35px;
 }
 h1 span{
   display: block;
