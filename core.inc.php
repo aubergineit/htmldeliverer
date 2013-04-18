@@ -12,7 +12,7 @@ $project = isset($_GET['project']) && !empty($_GET['project']) ? preg_replace('{
 $configFile = FILES_DIR .'/' . $project . '/config.xml';
 
 if($project == null || !file_exists($configFile)) {
-	die('<p>Er is geen bestaand project gevonden</p>');
+	die('<p>No project found</p>');
 }
 $showcaseGroup = simplexml_load_file($configFile);
 
