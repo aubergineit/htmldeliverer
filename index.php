@@ -1,35 +1,16 @@
 <?php
-
 require_once('core.inc.php');
-
-//var_dump($project);
-
-if(isset($_GET['make']) && $_GET['make'] == 'zip') {
-
-	include('zip.inc.php');
-
-	$result = zip(FILES_DIR, ZIP_FILENAME);
-
-	// download zip
-	header('Content-Type: archive/zip');
-	header('Content-Disposition: attachment; filename=' . ZIP_FILENAME);
-
-	$fp = fopen(ZIP_FILENAME,"r");
-	echo fpassthru($fp);
-	exit;
-}
-
 ?><!DOCTYPE html>
 <html>
 	<head>
 		<title>HTMLViewer</title>
 
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
-		<!-- <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" /> -->
 		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="/media/jquery.snippet.css" />
 		<link rel="stylesheet" href="/media/jquery.selectboxit.css" />
 		<link href="/media/viewer.css" type="text/css" media="screen" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
@@ -69,9 +50,6 @@ if(isset($_GET['make']) && $_GET['make'] == 'zip') {
 			<div class="external-txt">
 				<a href="#" class="external-link" target="_blank"><img src="/media/external_link_white.png" alt="Nieuw window" /> Open in a new window </a></span>
 			</div>
-			<!--<div class="download-txt">
-				<a href="./?make=zip" class="zip"><img src="/media/zip_download.png" alt="Zip" /> Download files</a></span>
-			</div>-->
 			<div class="tinyurl-txt">
 				<img src="/media/link_white.png" alt="Verkorte link" /> <input type="text" name="tinyurl" id="tinyurl" />
 			</div>
@@ -92,15 +70,14 @@ if(isset($_GET['make']) && $_GET['make'] == 'zip') {
 				<ul>
 					<li><a href="#preview">Preview</a></li>
 					<li><a href="#previewsource">HTML</a></li>
-				        <li><a href="#preview" data-value="480">Smartphone</a></li>
-				        <li><a href="#preview" data-value="620">Small tablet</a></li>
-				        <li><a href="#preview" data-value="788">Tablet portrait</a></li>
-				        <li><a href="#preview" data-value="1024">Tablet landscape</a></li>
-				        <li><a href="#preview" data-value="1300">Laptop</a></li>
-
+					<li><a href="#preview" data-value="480">Smartphone</a></li>
+					<li><a href="#preview" data-value="620">Small tablet</a></li>
+					<li><a href="#preview" data-value="788">Tablet portrait</a></li>
+					<li><a href="#preview" data-value="1024">Tablet landscape</a></li>
+					<li><a href="#preview" data-value="1300">Laptop</a></li>
 				</ul>
 				<div id="preview" class="ui-widget-content">
-					<iframe src="/leegiframe.html" class="ui-widget-content" frameborder="no" id="frame-source" width="100%" height="100%"></iframe>
+					<iframe src="/emptyiframe.html" class="ui-widget-content" frameborder="no" id="frame-source" width="100%" height="100%"></iframe>
 				</div>
 				<div id="previewsource">
 				</div>

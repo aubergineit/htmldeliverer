@@ -21,7 +21,7 @@ html, body {
 	left: 3px;
 }
 #file-list h1.project-title {
-	font: 2.2em Cambria;
+	font: 2.0em 'Open Sans', Cambria, sans-serif;
 	margin: 0;
 	padding: 8px 0 0 200px;
 	color: #f90;
@@ -30,19 +30,15 @@ html, body {
 }
 #file-list .page-txt, #file-list .download-txt, #file-list .external-txt, #file-list .tinyurl-txt, #file-list .refresh-frame {
 	color: #fff;
-	font: 1.2em Cambria, sans-serif;
+	font: 1.1em 'Open Sans', Cambria, sans-serif;
 	position: absolute;
 }
 #file-list .page-txt {
-	/*left: 200px;
-	top: 19px;*/
 	left: 10px;
 	top: 66px;
 }
 .dropdown {
 	position: absolute;
-	/*left: 275px;
-	top: 14px;*/
 	left: 85px;
 	top: 60px;
 	z-index: 10;
@@ -56,15 +52,10 @@ html, body {
 	top: 61px;
 }
 #file-list .download-txt {
-	/*left: 540px;
-	top: 17px;*/
 	left: 566px;
 	top: 61px;
 }
 #file-list .tinyurl-txt {
-	/*left: 540px;
-	top: 17px;*/
-	/*left: 715px;*/
 	left: 570px;
 	top: 59px;
 	padding-left: 35px;
@@ -110,7 +101,6 @@ html, body {
 	border: none;
 	border-bottom: 1px solid #aaa;
 }
-/* Capriola, sans-serif */
 .break {
 	height: 0;
 	line-height: 0;
@@ -141,7 +131,7 @@ html, body {
 	text-align: center;
 
 	color: #fff;
-	font: 1.2em Cambria,sans-serif;
+	font: 1.1em 'Open Sans', Cambria,sans-serif;
 }
 .validators img.html {
 	width: 32px;

@@ -23,15 +23,10 @@ $(document).ready(function() {
 
 		// Change the external link to new URL
 		$('.external-link').attr('href', $(this).val());
-
-
 		var bigurl = 'http://' + document.location.hostname + $(this).val();
-
-		
 		$('#w3c').attr('href', $('#w3c').attr('data-default') + escape(bigurl));
 
 		// Retrieve and show the TinyURL
-		
 		$.getJSON('http://json-tinyurl.appspot.com/?callback=?', { 'url': bigurl },
       function(data) {
 				$('#tinyurl').val(data.tinyurl);
@@ -74,7 +69,6 @@ $(document).ready(function() {
 	});
 
 	// Load config XML
-
 	configFile = '/' + $('#config_file').val();
 	$.ajax({
 		type: "GET",
@@ -102,19 +96,10 @@ $(document).ready(function() {
 
 function changeFile(file) {
 
-	//removeTabs();
-
 	selectedSource = file;
 	$('#frame-source').attr('src', selectedSource);
 
-	// Add image tabs + Source
-	$.each(parsedConfig, function(index, val) {
-		if(index == selectedSource) {
-			$.each(val, function(imageSource, imageName) {
-				//addTab(imageName, '<img src="' + imageSource + '" />');
-			});
-		}
-	});
+	// Add source tab with code highlighting
 	$.get(selectedSource, function(code) {
 		elm = $('<pre>');
 		elm.text(code.replace(/\t/g, '  '));
