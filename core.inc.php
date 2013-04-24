@@ -26,7 +26,7 @@ if(count($showcaseGroup) > 0) {
 		foreach($group->page as $page) {
 			$entry = array();
 			$entry['src'] = (string) $page['src'];
-			if(strpos($entry['src'], '/') !== 0) $entry['src'] = '/' . $entry['src'];
+			if(strpos($entry['src'], '/') !== 0 && strpos($entry['src'], 'http://') !== 0) $entry['src'] = '/' . $entry['src'];
 
 			$entry['title'] = (string) $page['title'];
 			$imgSrc = array();
